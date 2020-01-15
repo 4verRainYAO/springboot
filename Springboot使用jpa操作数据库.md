@@ -32,7 +32,7 @@ spring:
 
 ## 4.编写实体类
 
-**@Data注解：**idea中的一个插件lombok，加上该注解，能简化代码，提高效率。注解在类上会自动生成setter/getter、equals、canEqual、hashCode、toString方法，如为final属性，则不会为该属性生成setter方法。关于idea中安装lombok，请参考：
+**@Data注解：**idea中的一个插件lombok，加上该注解，能简化代码，提高效率。注解在类上会自动生成setter/getter、equals、canEqual、hashCode、toString方法，如为final属性，则不会为该属性生成setter方法。关于idea中安装使用lombok，请参考：https://github.com/4verRainYAO/springboot/blob/master/idea%E4%B8%AD%E5%AE%89%E8%A3%85lombok%E6%8F%92%E4%BB%B6%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8.md
 
 **@Entity注解：**JPA注解到类上表示是一个实体类，必须跟@Id注解一起使用，否则  No identifier specified for entity。name属性，表示其所对应的数据库中的表名。
 
