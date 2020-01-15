@@ -81,3 +81,26 @@ public interface UserDao extends JpaRepository<UserEntity, Integer> {
     List<Integer> findIdByParentId(@Param("parentId") Integer parentId);
 }
 ```
+
+4.dao层中使用@Query注解的sql语句注意点
+
+```java
+public interface DepartmentDao extends JpaRepository<Department,Integer> {
+    @Query("update Department d set d.empNum=:num where d.deptNo=:id ")
+    @Modifying
+    void updateNumber(@Param("num")Integer num,@Param("id")Integer id);
+}
+```
+
+（1）使用实体类代替表名；
+
+（2）使用实体的属性名代替字段名
+
+（3）使用=：的形式代替参数
+
+（4）=：后面的参数要跟**@Parm**注解中的一致
+
+（5）update跟delete语句需要加上  **@Modifying**注解
+
+（6）在Service上，需要加上**@Service**跟**@Transactional**
+
