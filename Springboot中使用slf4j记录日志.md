@@ -15,13 +15,13 @@
 ```yml
 logging:
   level:
-	#日志级别
+#日志级别
     root: info
   pattern:
-  	#日志输出格式
+  #日志输出格式
     console: '%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{15} - %msg%n'
   file:
-  	#日志文件输出路径
+  #日志文件输出路径
     path: D:\java\log
 ```
 
