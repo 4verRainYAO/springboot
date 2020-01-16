@@ -62,7 +62,7 @@ public ResultJson<User> Login(@PathVariable("id") int id)
 
 前端请求：
 
-![image-20200116105550422](D:\java\github\springboot\pictures\image-20200116105550422.png)
+![image-20200116105550422](https://github.com/4verRainYAO/springboot/blob/master/pictures/image-20200116105550422.png)
 
 后端接收：
 
@@ -83,7 +83,7 @@ public ResultJson<Employee> addEmployee(
 
 前端请求：
 
-![image-20200116110546214](D:\java\github\springboot\pictures\image-20200116110546214.png)
+![image-20200116110546214](https://github.com/4verRainYAO/springboot/blob/master/pictures/image-20200116110546214.png)
 
 后端接收：使用**@RequestBody**注解到一个对象上：
 
