@@ -9,6 +9,10 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      #根据实体类自动创建表，更新或者创建数据表结构
+      ddl-auto: update
 ```
 
 ## 2.在pom.xml中引入mysql驱动
