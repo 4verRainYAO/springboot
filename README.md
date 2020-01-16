@@ -1,2 +1,2 @@
 # springboot
-关于springboot快速搭建项目和面试相关问题
+关于springboot编写项目的一些总结以及一些关于springboot的面试问题
