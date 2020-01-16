@@ -72,5 +72,9 @@ public class SwaggerConfig {
  @ApiOperation(value = "修改部门人数", notes = "对接人：4ver")
 ```
 
+@ApiParam说明接口中的参数是什么意思
 
+```java
+public ResultJson<User> Login(@ApiParam(value = "添加租户或者添加用户") int id)
+```
 
