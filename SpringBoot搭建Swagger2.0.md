@@ -64,6 +64,8 @@ public class SwaggerConfig {
 
 ## 3.登录浏览器访问
 
+在application启动类上加上`@EnableSwagger2`注解
+
 默认访问地址localhost:8080/swagger-ui.html
 
 可以使用@ApiOperation说明接口是干什么的
